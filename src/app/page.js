@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 import { RiCloseLargeFill } from "react-icons/ri";
+import { FaMapMarkerAlt } from "react-icons/fa";
 
 export default function Home() {
   const [openDialog, setOpenDialog] = useState(false);
@@ -39,8 +40,10 @@ export default function Home() {
         ></div>
         <div
           onClick={handleClick}
-          className="transition-all duration-300 absolute top-[100px] left-[100px] sm:top-52 sm:left-52 cursor-pointer bg-purple text-white p-5 w-10 h-10 rounded-full hover:scale-150"
-        ></div>
+          className="flex justify-center items-center transition-all duration-300 absolute top-[100px] left-[100px] sm:top-52 sm:left-52 cursor-pointer text-2xl bg-purple text-white w-10 h-10 rounded-full hover:scale-150"
+        >
+          <FaMapMarkerAlt />
+        </div>
       </div>
       <dialog ref={dialogRef} className="w-96 h-80 shadow-xl" open={openDialog}>
         <div
@@ -66,7 +69,7 @@ export default function Home() {
           </Link>
         </div>
         <button
-          className="absolute -top-3 -right-3 bg-white w-8 h-8 flex items-center justify-center rounded-full"
+          className="absolute -top-3 -right-3 bg-white w-8 h-8 flex items-center justify-center rounded-full transition-all duration-300 hover:bg-purple hover:text-white"
           onClick={handleClick}
         >
           <RiCloseLargeFill />
