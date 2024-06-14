@@ -30,7 +30,7 @@ export default function Home() {
   }, [openDialog]);
 
   return (
-    <div className="flex justify-center items-center my-10">
+    <div className="flex justify-center items-center mt-20 mb-28">
       <div className="relative rounded-3xl overflow-hidden">
         <div
           className="bg-cover bg-center transition-all duration-300 relative w-96 h-96 sm:w-[700px] sm:h-[500px]  opacity-40"
