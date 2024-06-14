@@ -11,6 +11,8 @@ module.exports = {
         black: "#1a1818;",
         white: "#fff",
         purple: "#512d6d",
+        gold: "#b08f23",
+        light_gold: "#fffef1",
       },
     },
   },

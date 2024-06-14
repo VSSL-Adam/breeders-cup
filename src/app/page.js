@@ -31,29 +31,35 @@ export default function Home() {
 
   return (
     <div className="flex justify-center items-center my-10">
-      <div className="relative">
+      <div className="relative rounded-3xl overflow-hidden">
         <div
-          className="bg-cover bg-center transition-all duration-300 relative w-96 h-96 sm:w-[700px] sm:h-[700px] grayscale opacity-80"
+          className="bg-cover bg-center transition-all duration-300 relative w-96 h-96 sm:w-[700px] sm:h-[500px]  opacity-40"
           style={{
             backgroundImage: `url(/images/fairgrounds.jpg)`,
           }}
         ></div>
         <div
           onClick={handleClick}
-          className="flex justify-center items-center transition-all duration-300 absolute top-[100px] left-[100px] sm:top-52 sm:left-52 cursor-pointer text-2xl bg-purple text-white w-10 h-10 rounded-full hover:scale-150"
+          className="flex justify-center items-center transition-all duration-300 absolute top-[130px] left-[100px] sm:top-40 sm:left-52 cursor-pointer text-5xl  text-gold w-10 h-10 rounded-full hover:scale-150"
         >
           <FaMapMarkerAlt />
         </div>
       </div>
-      <dialog ref={dialogRef} className="w-96 h-80 shadow-xl" open={openDialog}>
+      <dialog
+        ref={dialogRef}
+        className="border border-gold w-80 h-96 shadow-xl bg-light_gold"
+        open={openDialog}
+      >
         <div
           className="bg-cover bg-center h-20 w-full"
           style={{
             backgroundImage: `url(/images/restaurant.jpg)`,
           }}
         ></div>
-        <div className="p-5">
-          <h2 className="font-bold text-lg">Duis aute irure dolor in</h2>
+        <div className="p-8">
+          <h2 className="font-bold text-lg text-gold uppercase">
+            Duis aute irure dolor in
+          </h2>
           <p className="text-sm">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -63,13 +69,13 @@ export default function Home() {
           <Link
             href="https://seatgeek.com/breeders-cup-tickets"
             target="_blank"
-            className="w-full bg-purple block text-center text-white py-3 mt-2 transition-all duration-300 border border-purple hover:bg-transparent hover:text-purple"
+            className="w-full font-bold bg-gold block text-center text-white py-3 mt-5 transition-all duration-300 border border-gold hover:bg-transparent hover:text-gold"
           >
             Buy Now
           </Link>
         </div>
         <button
-          className="absolute -top-3 -right-3 bg-white w-8 h-8 flex items-center justify-center rounded-full transition-all duration-300 hover:bg-purple hover:text-white"
+          className="border border-gold absolute -top-3 -right-3 bg-gold text-white w-8 h-8 flex items-center justify-center rounded-full transition-all duration-300 hover:bg-light_gold hover:text-gold"
           onClick={handleClick}
         >
           <RiCloseLargeFill />
